@@ -2,7 +2,8 @@
 - hosts: localhost
   connection: local
   become: true
-- block:
+  
+- tasks:
   - import_tasks: plays/core.yml
 
 
