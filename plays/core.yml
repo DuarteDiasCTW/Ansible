@@ -1,4 +1,9 @@
 ---
+- name: Install tmux
+  package:
+    name: flatpak
+    state: present
+
 - name: Install Flatpak
   package:
     name: flatpak

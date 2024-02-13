@@ -1,0 +1,6 @@
+- name: software | spotify | install package
+  become_user: tldart
+  flatpak:
+    name: com.spotify.Client
+    method: user
+    state: present
