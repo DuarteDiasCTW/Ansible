@@ -5,6 +5,7 @@
     state: present
 
 - name: Install Flatpak
+  shell: flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
   package:
     name: flatpak
     state: present
