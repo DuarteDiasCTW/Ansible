@@ -3,4 +3,3 @@
   flatpak:
     name: com.bitwarden.desktop
     state: present
-  when: bitwarden is defined and bitwarden == true
