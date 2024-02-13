@@ -1,6 +1,6 @@
 - name: software | spotify | install package
   become_user: tldart
-  apt:
+  package:
     name: spotify
     method: user
     state: present
