@@ -1,0 +1,33 @@
+---
+- hosts: localhost
+  connection: local
+  become: true
+
+tasks:
+  - name: copy .bashrc file
+    copy:
+     src: files/bashrc
+     dest: /home/tldart/.bashrc
+     owner: tldart
+     group: tldart
+
+  - name: copy .vimrc file
+    copy:
+     src: files/vimrc
+     dest: /home/tldart/.vimrc
+     owner: tldart
+     group: tldart
+
+  - name: copy .zshrc file
+    copy:
+     src: files/zshrc
+     dest: /home/tldart/.zshrc
+     owner: tldart
+     group: tldart
+
+  - name: copy .alacritty file
+    copy:
+     src: files/alacrity.toml
+     dest: /home/tldart/.alacritty.toml
+     owner: tldart
+     group: tldart

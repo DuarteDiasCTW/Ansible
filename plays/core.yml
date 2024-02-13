@@ -1,0 +1,8 @@
+---
+tasks:
+  - name: install packages
+    apt:
+      name:
+        - htop
+        - tmux
+        - flatpak
