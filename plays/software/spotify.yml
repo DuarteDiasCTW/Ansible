@@ -2,5 +2,4 @@
   become_user: tldart
   package:
     name: spotify
-    method: user
     state: present
