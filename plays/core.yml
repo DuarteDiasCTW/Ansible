@@ -1,6 +1,5 @@
-- name: install packages
-    package:
-      name:
-        - htop
-        - tmux
-        - flatpak
+---
+- name: Install Flatpak
+  package:
+    name: flatpak
+    state: present
