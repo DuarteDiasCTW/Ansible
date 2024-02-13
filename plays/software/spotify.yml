@@ -1,6 +1,6 @@
 - name: software | spotify | install package
   become_user: tldart
-  flatpak:
-    name: com.spotify.Client
+  apt:
+    name: spotify
     method: user
     state: present
