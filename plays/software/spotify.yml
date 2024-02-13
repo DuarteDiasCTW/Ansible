@@ -1,5 +1,5 @@
 - name: software | spotify | install package
   become_user: tldart
-  package:
+  snap:
     name: spotify
     state: present
