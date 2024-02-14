@@ -2,8 +2,7 @@
 - hosts: localhost
   connection: local
   become: true
-
-roles:
+  roles:
   - role: 'plays/roles/rust.yml'
   #tasks:
   #  - import_tasks: plays/core.yml
