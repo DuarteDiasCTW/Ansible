@@ -34,7 +34,7 @@
   shell: flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 # Get the software
-- import_tasks: playbooks/software/spotify
+- import_tasks: playbooks/software/spotify.yml
 - import_tasks: playbooks/software/bitwarden.yml
 - import_tasks: playbooks/software/teams.yml
 - import_tasks: playbooks/software/outlook.yml
