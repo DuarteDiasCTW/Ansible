@@ -1,3 +1,6 @@
+- host: localhost
+  become: true
+
 - name: check if cargo is installed
   shell: command -v cargo
   register: cargo_exists
