@@ -14,6 +14,4 @@
     - rust
 
 - name: install rust/cargo
-  shell: /tmp/sh.rustup.rs -y
-  tags:
-    - rust
+  shell: sh /tmp/sh.rustup.rs -y
