@@ -14,7 +14,6 @@
     - rust
 
 - name: install rust/cargo
-  when: cargo_exists is failed
   shell: /tmp/sh.rustup.rs -y
   tags:
     - rust
