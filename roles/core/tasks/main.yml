@@ -14,11 +14,6 @@
     name: tmux
     state: present
 
-- name: Install Code
-  package:
-    name: code
-    state: present
-
 - name: Install VLC
   package:
     name: vlc
