@@ -4,7 +4,7 @@
   become: true
 
   roles:
-    - { role: rust, become: true }
+    #- { role: rust, become: true }
     - { role: core, become: true }
   #tasks:
   #  - import_tasks: plays/software/rust.yml
