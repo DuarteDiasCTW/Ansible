@@ -13,13 +13,6 @@
   tags:
     - rust
 
-- name: install rust/cargo
-  when: cargo_exists is failed
-  shell: /tmp/sh.rustup.rs -y
-  become: true
-  tags:
-    - rust
-
-- name: Finish installing toolchain
-  shell: rustup default stable
-  become: true
+- name: Run rustup
+  ansible.builtin.shell:
+    cmd: cat /tmp/rustup.sh | sh -s -- -y
