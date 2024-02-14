@@ -1,7 +1,9 @@
 - name: Install rustup
   snap:
-    - rustup
+    name:
+      - rustup
 
 - name: Install cargo
   apt:
-    - cargo
+    name:
+      - cargo
