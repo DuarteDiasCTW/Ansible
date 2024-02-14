@@ -14,5 +14,9 @@
     name: flatpak
     state: present
 
+- name: get the packages
+- import_tasks: software/spotify
+- import_tasks: software/bitwarden
+
 #- name: Fix Flatpack remotes
 #  shell: flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
