@@ -1,4 +1,9 @@
 ---
+- name: Install pip
+  package:
+    name: pip
+    state: present
+
 - name: Install vim
   package:
     name: vim
@@ -7,6 +12,16 @@
 - name: Install tmux
   package:
     name: tmux
+    state: present
+
+- name: Install Code
+  package:
+    name: code
+    state: present
+
+- name: Install VLC
+  package:
+    name: vlc
     state: present
 
 - name: Install Flatpak
@@ -19,5 +34,7 @@
   shell: flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 # Get the software
-- import_tasks: playbooks/software/spotify.yml
+- import_tasks: playbooks/software/spotify
 - import_tasks: playbooks/software/bitwarden.yml
+- import_tasks: playbooks/software/teams.yml
+- import_tasks: playbooks/software/outlook.yml

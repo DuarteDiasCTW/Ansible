@@ -1,0 +1,5 @@
+- name: software | teams | install package
+  become_user: tldart
+  flatpak:
+    name: com.github.IsmaelMartinez.teams_for_linux
+    state: present

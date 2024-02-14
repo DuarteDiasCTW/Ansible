@@ -1,0 +1,5 @@
+- name: software | teams | install package
+  become_user: tldart
+  flatpak:
+    name: io.github.mahmoudbahaa.outlook_for_linux
+    state: present
