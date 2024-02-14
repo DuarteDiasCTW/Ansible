@@ -5,6 +5,7 @@
 
   tasks:
     - import_tasks: plays/core.yml
+    - import_tasks: plays/software/rust.yml
     - import_tasks: plays/software/alacritty.yml
     - import_tasks: plays/software/spotify.yml
     - import_tasks: plays/software/bitwarden.yml
