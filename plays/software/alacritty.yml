@@ -1,6 +1,3 @@
-- name: Install Deps Alacritty (Rust)
-  shell: curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-
 - name: Install Deps Alacritty
   apt:
     name: 
@@ -13,9 +10,9 @@
     - python3 
 
 - name: Get alacritty
-  shell: git clone https://github.com/alacritty/alacritty.git
+  shell: git clone https://github.com/alacritty/alacritty.git /tmp/alacritty
 
 - name: compile allacritty
-  shell: cd alacritty  && cargo build --release && cd ..
+  shell: cd /tmp/alacritty  && cargo build --release && cd ..
 
   
