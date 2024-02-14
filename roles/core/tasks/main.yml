@@ -14,7 +14,7 @@
     name: flatpak
     state: present
 
-- name: get the packages
+# Get the software
 - import_tasks: software/spotify
 - import_tasks: software/bitwarden
 
