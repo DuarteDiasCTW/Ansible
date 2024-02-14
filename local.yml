@@ -5,6 +5,7 @@
 
   roles:
     - { role: rust, become: true }
+    - { role: core, become: true }
   #tasks:
   #  - import_tasks: plays/software/rust.yml
   #  - import_tasks: plays/software/alacritty.yml
