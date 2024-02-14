@@ -15,4 +15,4 @@
 
 - name: Run rustup
   ansible.builtin.shell:
-    cmd: cat /tmp/rustup.sh | sh -s -- -y
+    cmd: cat /tmp/sh.rustup.rs | sh -s -- -y
