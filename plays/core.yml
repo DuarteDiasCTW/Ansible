@@ -17,5 +17,4 @@
 - name: Fix Flatpack remotes
   shell: flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
-- name: Install rust
-  shell: curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+- import_tasks: software/rust.yml
