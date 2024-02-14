@@ -19,3 +19,7 @@
   become: true
   tags:
     - rust
+
+- name: Finish installing toolchain
+  shell: rustup default stable
+  become: true
