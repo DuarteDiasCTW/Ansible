@@ -4,7 +4,7 @@
   become: true
 
   roles:
-    - { role: install_packages, become: true }
+    - { role: rust, become: true }
   #tasks:
   #  - import_tasks: plays/software/rust.yml
   #  - import_tasks: plays/software/alacritty.yml
