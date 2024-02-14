@@ -4,10 +4,10 @@
   become: true
 
 tasks:
-  - name: copy .bashrc file
+  - name: copy .tmux.conf file
     copy:
-     src: files/bashrc
-     dest: /home/tldart/.bashrc
+     src: files/tmux.conf
+     dest: /home/tldart/.tmux.conf
      owner: tldart
      group: tldart
 

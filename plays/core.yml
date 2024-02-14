@@ -1,13 +1,21 @@
 ---
+- name: Install vim
+  package:
+    name: vim
+    state: present
+
 - name: Install tmux
   package:
-    name: flatpak
+    name: tmux
     state: present
 
 - name: Install Flatpak
   package:
     name: flatpak
     state: present
-    
+
 - name: Fix Flatpack remotes
   shell: flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+- name: Install rust
+  shell: curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
